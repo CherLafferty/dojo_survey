@@ -20,24 +20,29 @@
         .group{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content:space-between;
         }
     </style>
 </head>
 <body>
-    <h3>Submitted Info:</h3>
-    <div id="info">
-        <div class="group">
-            <p>Name:</p><p>{{session['name']}}</p>
-        </div>
-        <div class="group">
-            <p>Location:</p><p>{{session['location']}}</p>
-        </div>
-        <div class="group">
-            <p>Language:</p><p>{{session['language']}}</p>
-        </div>
-        <div class="group">
-            <p>comments:</p><p>{{session['comments']}}</p>
+            <h3>Submitted Info:</h3>
+            <div id="info">
+                <div class="group">
+                    <p>Name:</p><p>{{ dojo.name }}</p>
+                </div>
+                <div class="group">
+                    <p>Location:</p><p>{{ dojo.location }}</p>
+                </div>
+                <div class="group">
+                    <p>Language:</p><p>{{ dojo.language }}</p>
+                </div>
+                <div class="group">
+                    <p>comments:</p><p>{{ dojo.comment }}</p>
+                </div>
+            </div>
+        <div>
+        <div>
+            <a href="/" class="btn btn-primary">Home</a>
         </div>
     </div>
 </body>
